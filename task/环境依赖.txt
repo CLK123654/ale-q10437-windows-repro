@@ -1,3 +1,7 @@
-使用Windows11和PowerShell7。主软件为Helm3.17.3，辅助工具为Node.js24LTS与npm。Helm负责Chart语法检查、值合并、文件读取、模板循环、Release上下文和Kubernetes对象渲染，不能用手写清单或其它模板引擎替代。
+操作系统： Windows11、macOS或主流64位Linux。
 
-作业只做离线发布设计，不连接Kubernetes集群、镜像仓库、广告平台或外部接口。运行账户需要读取input_data并在同级创建output的权限，不需要管理员权限。建议准备2核处理器、4GB内存和1GB可用磁盘。
+主软件为Helm，使用兼容Helm3.17的版本。Node.js24LTS与npm负责读取业务输入、调用Helm并整理发布报告。Windows11使用PowerShell执行npm入口。
+
+作业只做离线Chart发布设计，不连接Kubernetes集群、镜像仓库、广告平台或外部接口。执行账号需要读取input_data，并在同级创建output。Helm必须实际完成Chart语法检查、值合并、文件读取、模板循环、Release上下文和Kubernetes对象渲染。
+
+当前分片清单适合普通64位多核CPU和常规办公内存，不使用GPU。磁盘应能容纳输入Chart、渲染对象和发布报告。需设置有限超时，覆盖本题Chart处理并避免异常无限等待。

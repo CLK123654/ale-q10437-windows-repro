@@ -10,43 +10,57 @@
     "items": [
       {
         "index": 1,
+        "title": "核心交付与入口",
         "missing": [],
+        "score": 16,
         "priority": "Gate项",
         "level": "L1任务指令遵循层"
       },
       {
         "index": 2,
+        "title": "输入关联与分片映射",
         "missing": [],
+        "score": 16,
         "priority": "高权重项",
         "level": "L5多源关联与字段一致性层"
       },
       {
         "index": 3,
+        "title": "重试与隔离决策",
         "missing": [],
+        "score": 16,
         "priority": "高权重项",
         "level": "L6领域计算与专业规则层"
       },
       {
         "index": 4,
+        "title": "聚合与协调契约",
         "missing": [],
+        "score": 18,
         "priority": "Gate项",
         "level": "L9跨产物一致性与可追溯层"
       },
       {
         "index": 5,
+        "title": "Helm实现质量",
         "missing": [],
+        "score": 14,
         "priority": "高权重项",
         "level": "L2软件或工具操作层"
       },
       {
         "index": 6,
+        "title": "报告一致性",
         "missing": [],
+        "score": 12,
         "priority": "普通项",
         "level": "L7产物结构或Schema或专业对象层"
       },
       {
         "index": 7,
+        "title": "发布拒绝与问题说明",
         "missing": [],
+        "score": 8,
         "priority": "辅助项",
         "level": "L4数据清洗与质量控制层"
       }
