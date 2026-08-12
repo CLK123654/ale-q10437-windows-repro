@@ -1,0 +1,8 @@
+1.检查Chart.yaml、values.yaml、shard_inputs.csv、failure_plan.json和release_profile.json，确认字段能够按分片标识与发布日期关联。
+2.在resources.yaml保存Helm根上下文，读取Chart内文件并遍历分片，避免循环内丢失Release和Values。
+3.为每个分片生成首次Job，把分片标识、映射序号、来源路径、处理量和首次结果写入注解与容器环境。
+4.按失败处置策略生成有限重试Job，重试沿用原映射序号；终止故障只进入隔离ConfigMap。
+5.从最终状态推导聚合等待集合、纳入集合和排除集合，按分片去重后计算聚合处理量。
+6.用release_profile.json设置渲染发布名、namespace、Kubernetes版本、Lease时长和锁标识，使Lease与聚合Job保持一致。
+7.运行npm run build-release，由入口调用helm lint --strict和helm template并解析实际对象。
+8.检查完成Chart、对象数组和五份报告中的主键、资源名称、集合与数值是否相互闭合。

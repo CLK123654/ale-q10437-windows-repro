@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "violations": [],
+  "candidate_score_answer_leakage": [],
+  "rubric_contract": {
+    "item_count": 7,
+    "gate_count": 2,
+    "gate_upper_bound": 2,
+    "items": [
+      {
+        "index": 1,
+        "missing": [],
+        "priority": "Gate项",
+        "level": "L1任务指令遵循层"
+      },
+      {
+        "index": 2,
+        "missing": [],
+        "priority": "高权重项",
+        "level": "L5多源关联与字段一致性层"
+      },
+      {
+        "index": 3,
+        "missing": [],
+        "priority": "高权重项",
+        "level": "L6领域计算与专业规则层"
+      },
+      {
+        "index": 4,
+        "missing": [],
+        "priority": "Gate项",
+        "level": "L9跨产物一致性与可追溯层"
+      },
+      {
+        "index": 5,
+        "missing": [],
+        "priority": "高权重项",
+        "level": "L2软件或工具操作层"
+      },
+      {
+        "index": 6,
+        "missing": [],
+        "priority": "普通项",
+        "level": "L7产物结构或Schema或专业对象层"
+      },
+      {
+        "index": 7,
+        "missing": [],
+        "priority": "辅助项",
+        "level": "L4数据清洗与质量控制层"
+      }
+    ],
+    "valid": true
+  },
+  "answer_sheets": [
+    "交付物答案清单",
+    "固定字段答案",
+    "固定集合答案",
+    "固定数值答案",
+    "允许变体答案"
+  ],
+  "specification_sheets": [
+    "任务规格转化"
+  ],
+  "task_spec_column_count": 2,
+  "task_asset_id": "helm_ad_report_shard_release",
+  "forbidden_spec_labels": [],
+  "required_input_members_present": true,
+  "required_reference_members_present": true,
+  "humanizer_score": 47,
+  "semantic_review": "PASS",
+  "online_ai_detector_used_as_conclusion": false
+}
